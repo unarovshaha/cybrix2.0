@@ -1,0 +1,30 @@
+@import "../../../../app/styles/abstracts/variables"
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
+.header
+  display: flex
+  justify-content: center
+  gap: 4rem
+  align-items: center
+  &__fistMenu , &__secondMenu
+    display: flex
+    //gap: 2rem
+    list-style: none
+    li
+      font-size: $szie16
+      cursor: pointer
+      font-family: "Funnel Sans", sans-serif
+      font-optical-sizing: auto
+      font-weight: 500
+      font-style: normal
+      color: $menuListColor
+      padding: 1rem 2.4rem
+
+  &__logo
+    width: 10rem
+    & > img
+      width: 100%
+  .active
+    border: 1px $menuActive solid
+    border-radius: 20px
+    font-weight: 700
+    color: $menuActive
