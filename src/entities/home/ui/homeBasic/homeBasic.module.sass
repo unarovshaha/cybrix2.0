@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
+
+.basic
+  //padding: 10rem 0
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  height: 100vh
+  gap: 3rem
+  &__title
+    font-size: 5.4rem
+    text-align: center
+    font-weight: 600
+    font-family: "Funnel Sans", sans-serif
+    font-optical-sizing: auto
+    display: flex
+    flex-direction: column
+    gap: 2rem
+    position: relative
+    font-style: normal
+    & > span
+      color: white
+    &_span
+      background-color: rgba(0, 79, 148, 1)
+      color: white
+      padding: .8rem 1rem
+      width: 40rem
+      z-index: -1
+      position: absolute
+      align-self: center
+      border-radius: 10px
+      bottom: -.5rem
+      height: 8rem
+      transform: rotate(-1deg)
+  &__subtitle
+    font-weight: 400
+    font-family: "Funnel Sans", sans-serif
+    font-optical-sizing: auto
+    font-size: 2.4rem
+    text-align: center
+    width: 79rem
+  &__start
+    border-radius: 15px
+    font-weight: 600
+    font-family: "Funnel Sans", sans-serif
+    font-optical-sizing: auto
+    padding: 1rem 2rem
+    border: 3px solid rgba(35, 28, 100, 1)
+    font-size: 2.4rem
+    color: rgba(35, 28, 100, 1)
+    cursor: pointer
+  &__down
+    display: flex
+    flex-direction: column
+    gap: 2rem
+    &_circle
+      border-radius: 50%
+      border: 1px solid rgba(35, 28, 100, 1)
+      width: 5rem
+      height: 5rem
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 2rem
+      color: rgba(35, 28, 100, 1)
+    &_icon
+      width: 5rem
+@media (max-width: 900px)
+  .basic
+    gap: 2rem
+    &__title
+      font-size: 4rem
+      &_span
+        width: 30rem
+        height: 6rem
+    &__subtitle
+      width: 59rem
+    &__start
+      font-size: 2rem
+    &__down
+      gap: 1rem
+
+@media (max-width: 650px)
+  .basic
+    &__title
+      font-size: 3.5rem
+      &_span
+        width: 25rem
+        height: 5rem
+    &__subtitle
+      width: 49rem
+@media (max-width: 550px)
+  .basic
+    &__title
+      font-size: 3rem
+      &_span
+        width: 22rem
+        height: 4.5rem
+    &__subtitle
+      width: 100%

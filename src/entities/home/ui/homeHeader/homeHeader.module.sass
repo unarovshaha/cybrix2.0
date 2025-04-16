@@ -3,21 +3,41 @@
 .header
   display: flex
   justify-content: center
-  gap: 4rem
+  gap: 2rem
   align-items: center
+  position: fixed
+  background-color: white
+  top: 0
+  width: 100%
+  z-index: 1000
+  height: 10rem
+  &__bars
+    font-size: 2rem
+    color: $primary-light
+    display: none
   &__fistMenu , &__secondMenu
     display: flex
     //gap: 2rem
     list-style: none
     li
-      font-size: $szie16
+      font-size: $size16
       cursor: pointer
       font-family: "Funnel Sans", sans-serif
       font-optical-sizing: auto
       font-weight: 500
       font-style: normal
       color: $menuListColor
-      padding: 1rem 2.4rem
+      padding: 1rem 2rem
+  &__secondMenu
+    display: flex
+    align-items: center
+    &_lang
+      padding: 1rem
+      border: 1px $menuActive solid
+      border-radius: 20px
+      font-weight: 700
+      color: $menuActive
+      cursor: pointer
 
   &__logo
     width: 10rem
@@ -28,3 +48,53 @@
     border-radius: 20px
     font-weight: 700
     color: $menuActive
+.activeMenu
+  position: absolute
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(255, 255, 255, 0.33)
+  backdrop-filter: blur(5px)
+  transition: .8s all
+  z-index: 2000
+  &__list
+    background: $primary-dark
+    width: 20rem
+    height: 100%
+    display: flex
+    flex-direction: column
+    gap: 2rem
+    //align-items: center
+    list-style: none
+    //padding: 5rem 3rem
+    font-size: 1.4rem
+    //padding: 3rem
+    position: relative
+    color: white
+    & > li
+      left: 0
+      position: relative
+
+      top: 3rem
+      border-radius: 0 30px 30px 0
+      padding: 1rem 2rem
+
+      width: 80%
+    .activeMenuList
+      background-color: white
+      color: black
+@media (max-width: 1100px)
+  .header
+    gap: 1rem
+    &__fistMenu , &__secondMenu
+      li
+        padding: 1rem 1.5rem
+        font-size: 14px
+@media (max-width: 910px)
+  .header
+    justify-content: space-between
+    padding: 0 2rem
+    &__bars
+      display: flex
+    &__fistMenu , &__secondMenu
+      display: none
