@@ -1,7 +1,7 @@
 import logo from "../../../../shared/assets/logo/cybrixLogo.svg"
 
 import cls from "./homeHeader.module.sass"
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import classNames from "classnames";
 import { default as   img} from "../../../../shared/assets/icons/material-symbols_fact-check-outline-rounded.svg"
 const firstMenuList = [
@@ -30,6 +30,19 @@ export const HomeHeader = () => {
     const [activeLang, setActiveLang] = useState(false)
 
     const [activeBars, setActiveBars] = useState(false)
+
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+
 
     const renderMenu = () => {
         return firstMenuList.map(item => (
@@ -62,7 +75,7 @@ export const HomeHeader = () => {
 
     return (
         <>
-            <div className={cls.header}>
+            <div className={`${cls.header} ${scrolled ? cls.header_scrolled : ""}`}>
                 <div onClick={() => setActiveBars(!activeBars)} className={cls.header__bars}>
                     <i className={"fa fa-bars"}/>
                 </div>
