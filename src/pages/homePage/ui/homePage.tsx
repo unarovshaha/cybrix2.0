@@ -1,4 +1,5 @@
-import {HomeHeader , HomeBasic} from "../../../entities/home/index";
+import {HomeHeader, HomeBasic, HomeProjects} from "entities/home";
+
 import cls from "./homePage.module.sass"
 
 
@@ -8,6 +9,7 @@ export const HomePage = () => {
         <div className={cls.home}>
             <HomeHeader/>
             <HomeBasic/>
+            <HomeProjects/>
         </div>
     );
 };

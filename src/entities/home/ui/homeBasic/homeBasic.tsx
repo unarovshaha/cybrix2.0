@@ -1,7 +1,7 @@
 import cls from "./homeBasic.module.sass"
 import downIcon from "../../../../shared/assets/icons/down.svg"
 import python from "../../../../shared/assets/icons/python.svg"
-type
+
 export const HomeBasic = () => {
     return (
         <div className={cls.basic}>
