@@ -8,6 +8,11 @@
   align-items: center
   height: 100vh
   gap: 3rem
+  &__cotainer
+    display: flex
+    flex-direction: column
+    gap: 2rem
+    position: relative
   &__title
     font-size: 5.4rem
     text-align: center
@@ -21,18 +26,38 @@
     font-style: normal
     & > span
       color: white
+      z-index: 2
     &_span
-      background-color: rgba(0, 79, 148, 1)
+      background-color: #004F94
       color: white
       padding: .8rem 1rem
       width: 40rem
-      z-index: -1
+      z-index: 1
       position: absolute
       align-self: center
       border-radius: 10px
       bottom: -.5rem
       height: 8rem
-      transform: rotate(-1deg)
+      transform: rotate(-2deg)
+  &__icon
+    width: fit-content
+    position: absolute
+    object-fit: cover
+  &__script
+    top: -25rem
+    right: 20rem
+  &__pyhton
+    left: -21rem
+    top: -26rem
+  &__typescript
+    top: -4rem
+    right: -20rem
+  &__photoshop
+    top: 4rem
+    left: -26rem
+  &__figma
+    right: -20rem
+    bottom: -30rem
   &__subtitle
     font-weight: 400
     font-family: "Funnel Sans", sans-serif
@@ -41,7 +66,7 @@
     text-align: center
     width: 79rem
   &__start
-    border-radius: 15px
+    border-radius: 30px
     font-weight: 600
     font-family: "Funnel Sans", sans-serif
     font-optical-sizing: auto
