@@ -1,0 +1,118 @@
+$primary-color: #0052cc
+$text-color: #333
+$muted-color: #555
+$card-bg: #f7f8fa
+$border-radius: 16px
+
+.container
+  padding: 6rem 5rem
+  display: flex
+  flex-direction: column
+  gap: 5rem
+  font-family: sans-serif, Montserrat
+  //max-width: 1200px
+  //margin: auto
+
+  .header
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+    gap: 1rem
+    &__inner
+      display: flex
+      flex-direction: column
+      gap: 3.5rem
+
+    .title
+      width: fit-content
+      font-size: 3.2rem
+      font-weight: 700
+      background-color: $primary-color
+      color: white
+      padding: 0.6rem 2rem
+      border-radius: 8px
+
+    .description
+      //margin: 1rem 0 2rem
+      font-size: 2rem
+      color: $text-color
+      max-width: 65rem
+
+
+    .viewAll
+      background: none
+      border: 1px solid $primary-color
+      color: $primary-color
+      padding: 0.5rem 1rem
+      border-radius: 999px
+      cursor: pointer
+      font-weight: 500
+      transition: background 0.3s
+
+      &:hover
+        background: $primary-color
+        color: white
+
+
+  .projects
+    display: grid
+    grid-template-columns: 1fr
+    gap: 2rem
+
+    @media (min-width: 768px)
+      grid-template-columns: 1fr 1fr
+
+
+    .projectCard
+      background: $card-bg
+      border-radius: $border-radius
+      overflow: hidden
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05)
+      transition: transform 0.3s
+
+      &:hover
+        transform: translateY(-4px)
+
+
+      .imageContainer
+        position: relative
+        overflow: hidden
+
+        .projectImage
+          width: 56rem
+          height: 33rem
+          //display: block
+          object-fit: cover
+
+
+        .arrowOverlay
+          position: absolute
+          top: 50%
+          right: 1rem
+          transform: translateY(-50%)
+          background: white
+          border-radius: 50%
+          width: 40px
+          height: 40px
+          display: flex
+          align-items: center
+          justify-content: center
+          font-size: 1.25rem
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
+
+
+      .projectTitle
+        font-size: 1.25rem
+        font-weight: 600
+        padding: 1rem 1rem 0 1rem
+
+
+      .projectDescription
+        padding: 0.5rem 1rem 1rem 1rem
+        color: $muted-color
+        font-size: 0.95rem
+
+
+
+
