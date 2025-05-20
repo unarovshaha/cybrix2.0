@@ -1,0 +1,62 @@
+@import "../../../../app/styles/abstracts/variables"
+.team
+  width: 100%
+  height: 100vh
+  background: radial-gradient(circle, $primary-dark 90%, $dark-purple 100%)
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 3rem
+  padding: 4rem 2rem
+  &__article
+    font-family: $fontFamily
+    font-size: $size32
+    color: $white
+    mark
+      background: $white
+      color: $article-color
+      padding: .4rem
+      border-radius: 1rem
+  &__lighter
+    font-size: $size16
+    color: $white
+    width: 40%
+    line-height: 3rem
+    font-weight: 200
+    text-align: center
+  .arounder
+    display: flex
+    width: 100%
+    max-height: 100%
+    overflow: hidden
+    overflow-y: auto
+
+    gap: 3rem
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+  &__card
+    width: 290px
+    display: flex
+    flex-direction: column
+    align-items: start
+    gap: 2rem
+    &__imgBox
+      width: 100%
+      height: 100%
+      &__img
+        width: 106%
+        object-fit: cover
+    &__title
+      color: $white
+      font-family: $fontFamily
+    &__text
+      color: $white
+      font-size: $size16
+      font-weight: 200
+
+
+@media screen and (max-width: 768px)
+  .team
+    &__lighter
+      width: 100%

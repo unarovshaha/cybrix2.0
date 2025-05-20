@@ -1,3 +1,6 @@
 export {HomeHeader} from "./ui/homeHeader/homeHeader"
 export {HomeBasic} from "./ui/homeBasic/homeBasic"
 export {HomeProjects} from "./ui/homeProjects/homeProjects"
+export {HomeEmotsionals} from "./ui/homeEmotsionals/homeEmotsionals"
+export {HomeServices} from "./ui/homeServices/homeServices"
+export {HomeTeam} from "./ui/homeTeam/homeTeam"

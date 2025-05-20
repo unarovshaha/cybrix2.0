@@ -1,0 +1,73 @@
+/**/
+.team {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle, #1B286F 90%, #231C64 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 2rem;
+}
+.team__article {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  color: white;
+}
+.team__article mark {
+  background: white;
+  color: #0F3980;
+  padding: 0.4rem;
+  border-radius: 1rem;
+}
+.team__lighter {
+  font-size: 16px;
+  color: white;
+  width: 40%;
+  line-height: 3rem;
+  font-weight: 200;
+  text-align: center;
+}
+.team .arounder {
+  display: flex;
+  width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.team__card {
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+.team__card__imgBox {
+  width: 100%;
+  height: 100%;
+}
+.team__card__imgBox__img {
+  width: 106%;
+  object-fit: cover;
+}
+.team__card__title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.team__card__text {
+  color: white;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 768px) {
+  .team__lighter {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=homeTeam.module.css.map */
