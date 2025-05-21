@@ -1,4 +1,4 @@
-import {HomeHeader, HomeBasic, HomePlatform} from "entities/home";
+import {HomeHeader, HomeBasic, HomePlatform , HomeAbout , HomeEmotsionals , HomeProjects , HomeServices , HomeTeam} from "entities/home";
 import cls from "./homePage.module.sass"
 import Background from "shared/assets/img/texture40.svg"
 
