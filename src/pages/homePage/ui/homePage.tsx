@@ -1,4 +1,4 @@
-import {HomeHeader, HomeBasic, HomeAbout, HomePlatform} from "entities/home";
+import {HomeHeader, HomeBasic, HomePlatform} from "entities/home";
 import cls from "./homePage.module.sass"
 import Background from "shared/assets/img/texture40.svg"
 
@@ -12,6 +12,10 @@ export const HomePage = () => {
                 <HomeBasic/>
                 <HomeAbout/>
                 <HomePlatform/>
+                <HomeEmotsionals/>
+                <HomeServices/>
+                <HomeTeam/>
+                <HomeProjects/>
             </div>
 
             {/*<HomeBasic/>*/}

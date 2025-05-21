@@ -1,0 +1,121 @@
+/**/
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 10;
+}
+.header.header_scrolled {
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+.header__bars {
+  font-size: 2rem;
+  color: #004F94;
+  display: none;
+}
+.header__fistMenu, .header__secondMenu {
+  display: flex;
+  list-style: none;
+}
+.header__fistMenu li, .header__secondMenu li {
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Funnel Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: rgba(113, 113, 113, 0.42);
+  padding: 1rem 2rem;
+}
+.header__secondMenu {
+  display: flex;
+  align-items: center;
+}
+.header__secondMenu_lang {
+  padding: 1rem;
+  border: 1px rgb(32, 22, 102) solid;
+  border-radius: 20px;
+  font-weight: 700;
+  color: rgb(32, 22, 102);
+  cursor: pointer;
+}
+.header__logo {
+  width: 10rem;
+}
+.header__logo > img {
+  width: 100%;
+}
+.header .active {
+  border: 1px rgb(32, 22, 102) solid;
+  border-radius: 20px;
+  font-weight: 700;
+  color: rgb(32, 22, 102);
+}
+
+.activeMenu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.33);
+  backdrop-filter: blur(5px);
+  transition: 0.8s all;
+  z-index: 2000;
+}
+.activeMenu__list {
+  background: #1B286F;
+  width: 20rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.4rem;
+  position: relative;
+  color: white;
+}
+.activeMenu__list > li {
+  left: 0;
+  position: relative;
+  top: 3rem;
+  border-radius: 0 30px 30px 0;
+  padding: 1rem 2rem;
+  width: 80%;
+}
+.activeMenu__list .activeMenuList {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 1100px) {
+  .header {
+    gap: 1rem;
+  }
+  .header__fistMenu li, .header__secondMenu li {
+    padding: 1rem 1.5rem;
+    font-size: 14px;
+  }
+}
+@media (max-width: 910px) {
+  .header {
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+  .header__bars {
+    display: flex;
+  }
+  .header__fistMenu, .header__secondMenu {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=homeHeader.module.css.map */

@@ -1,0 +1,170 @@
+/**/
+.services {
+  width: 100%;
+  height: fit-content;
+  padding: 4rem 3rem;
+  padding-bottom: 0;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.services__article {
+  width: fit-content;
+  background: #212068;
+  padding: 1rem 3rem;
+  border-radius: 4rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.services__bold {
+  width: 50%;
+  text-align: center;
+  line-height: 6rem;
+  font-size: 32px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+.services__lighter {
+  color: #212068;
+  font-size: 13px;
+  width: 40%;
+  font-weight: 500;
+  line-height: 3rem;
+  text-align: center;
+}
+.services__arounder {
+  width: 80%;
+  height: 130%;
+  display: flex;
+  gap: 3rem;
+  overflow: hidden;
+}
+.services__arounder__iphone {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: start;
+  font-size: 13px;
+  margin-top: 4rem;
+}
+.services__arounder__iphone__box {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: start;
+}
+.services__arounder__iphone__box__title {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+}
+.services__arounder__iphone__box__text {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  line-height: 2.5rem;
+  width: 90%;
+}
+.services__arounder__laptop {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  text-align: center;
+  margin-top: 12rem;
+  font-size: 13px;
+}
+.services__arounder__laptop__title {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+}
+.services__arounder__laptop__text {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  line-height: 2.5rem;
+}
+.services__arounder__laptop__img {
+  text-align: start;
+}
+.services__arounder__tablet {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: start;
+  font-size: 13px;
+}
+.services__arounder__tablet__title {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+}
+.services__arounder__tablet__text {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  line-height: 2.5rem;
+}
+.services__arounder__tablet__img {
+  text-align: start;
+}
+
+@media screen and (max-width: 768px) {
+  .services__article {
+    font-size: 18px;
+  }
+  .services__bold {
+    font-size: 18px;
+    width: 90%;
+    text-align: center;
+    line-height: 3rem;
+  }
+  .services__lighter {
+    display: none;
+  }
+  .services__arounder {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .services__arounder__iphone {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .services__arounder__iphone__box {
+    width: 120%;
+  }
+  .services__arounder__iphone__box__title {
+    font-size: 19px;
+  }
+  .services__arounder__iphone__box__text {
+    font-size: 15px;
+  }
+  .services__arounder__iphone__img {
+    width: 50%;
+  }
+  .services__arounder__laptop {
+    width: 100%;
+    margin-top: 0;
+  }
+  .services__arounder__laptop__text {
+    font-size: 16px;
+  }
+  .services__arounder__tablet {
+    width: 100%;
+    align-items: center;
+  }
+  .services__arounder__tablet__text {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=homeServices.module.css.map */
