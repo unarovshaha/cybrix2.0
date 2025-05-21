@@ -1,0 +1,38 @@
+import cls from "./homePlatform.module.sass"
+import settings from "shared/assets/img/settingsGoal.svg"
+
+import comp from "shared/assets/img/comp.svg"
+
+export const HomePlatform = () => {
+    return (
+        <div className={cls.platform}>
+
+            <div className={cls.platform__info}>
+                <div className={cls.platform__info_headtitle}>
+                    Biz faqat platforma yaratmaymiz
+                </div>
+                <div className={cls.platform__info_title}>
+                 sizning biznesingizga mos, individual va natijaga yo‘naltirilgan yechimlarni ishlab chiqamiz.
+                </div>
+                <div className={cls.platform__info_subtitle}>
+                    Moslashuvchan yondashuv, ehtiyojga mos tizimlar va avtomatlashtirish — bizning asosiy
+                    ustunliklarimiz. Har bir loyiha — sizga xos va siz belgilagan jarayon asosida quriladi.
+                </div>
+                <div className={cls.platform__info_btn}>
+                    Jarayon sizdan. Avtomatlashtirish bizdan.
+                </div>
+                <div className={cls.platform__info_img}>
+                    <img src={settings} alt=""/>
+                </div>
+            </div>
+            <div className={cls.platform__sidebar}>
+                <div className={cls.platform__sidebar_item}/>
+
+                <img  src={comp} alt=""/>
+
+            </div>
+
+        </div>
+    );
+};
+

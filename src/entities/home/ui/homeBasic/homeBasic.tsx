@@ -1,10 +1,10 @@
 import cls from "./homeBasic.module.sass"
 import downIcon from "../../../../shared/assets/icons/down.svg"
-import python from "shared/assets/img/python.png"
-import javascriptIcon from 'shared/assets/img/javascript.png'
-import typescript from "shared/assets/img/typescript.png"
-import photoshop from "shared/assets/img/photoShop.png"
-import figma from "shared/assets/img/figma.png"
+import python from "shared/assets/icons/python.svg"
+import javascriptIcon from 'shared/assets/icons/javascript.svg'
+import typescript from "shared/assets/icons/typescript.svg"
+import photoshop from "shared/assets/icons/photoShop.svg"
+import figma from "shared/assets/icons/figma.svg"
 
 
 import classNames from "classnames";

@@ -6,7 +6,7 @@
   flex-direction: column
   justify-content: center
   align-items: center
-  height: 100vh
+  min-height: 100vh
   gap: 3rem
   &__cotainer
     display: flex
@@ -91,7 +91,22 @@
       color: rgba(35, 28, 100, 1)
     &_icon
       width: 5rem
-@media (max-width: 900px)
+@media (max-width: 1250px)
+  .basic
+    &__pyhton
+      left: -15rem
+      top: -20rem
+    &__photoshop
+      top: 20rem
+      left: -10rem
+    &__typescript
+      top: -2rem
+      right: -8rem
+
+    &__figma
+      right: -8rem
+      bottom: -30rem
+@media (max-width: 920px)
   .basic
     gap: 2rem
     &__title
@@ -105,16 +120,56 @@
       font-size: 2rem
     &__down
       gap: 1rem
-
+    &__script
+      right: 0
+      top: -22rem
+    &__pyhton
+      top: -18rem
+      //left: 0
+@media (max-width: 750px)
+  .basic
+    &__icon
+      width: 18rem
+      height: 18rem
+    &__pyhton
+      left: 0
+    &__typescript
+      right: 0
+      top: 20rem
+    &__figma
+      right: 6rem
+    &__photoshop
+      left: 0
 @media (max-width: 650px)
   .basic
+    height: 120dvh
     &__title
       font-size: 3.5rem
       &_span
         width: 25rem
         height: 5rem
+
     &__subtitle
       width: 49rem
+    &__script
+      top: -18rem
+    &__pyhton
+      top: -15rem
+    &__photoshop
+      top: 40rem
+      //display: none
+      left: 25rem
+    &__typescript
+      //display: none
+      right: 4rem
+      top: 25rem
+    &__figma
+      //display: none
+      //right: -1rem
+      left: 0
+    &__down
+      position: relative
+      bottom: -20rem
 @media (max-width: 550px)
   .basic
     &__title
@@ -124,3 +179,18 @@
         height: 4.5rem
     &__subtitle
       width: 100%
+@media (max-width: 450px)
+  .basic
+    &__script
+      top: -16rem
+    &__typescript
+      top: 28rem
+    &__figma
+      bottom: -28rem
+    &__photoshop
+      top: 40rem
+      left: 25rem
+@media (max-width: 400px)
+  .basic
+    &__photoshop
+      left: 17rem

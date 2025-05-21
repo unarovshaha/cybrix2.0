@@ -70,7 +70,7 @@ export const HomeHeader = () => {
                     setActiveBars(false)
                 }}
             >{item.label} </li>
-        ))
+        )) 
     }
 
     return (
